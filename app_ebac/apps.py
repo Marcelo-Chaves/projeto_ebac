@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class EbacConfig(AppConfig):
+class AppEbacConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'ebac'
+    name = 'app_ebac'
