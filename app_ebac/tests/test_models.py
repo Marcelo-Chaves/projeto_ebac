@@ -4,10 +4,10 @@ from app_ebac.models import Pessoa
 
 @pytest.mark.django_db
 def test_criar_pessoa():
-    pessoa = Pessoa.objects.create(nome="João", email="joao@example.com", telefone="123456789")
+    pessoa = Pessoa.objects.create(nome="Jackeline", email="jackeline@example.com", telefone="123456789")
     assert Pessoa.objects.count() == 1
-    assert pessoa.nome == "João"
-    assert pessoa.email == "joao@example.com"
+    assert pessoa.nome == "Jackeline"
+    assert pessoa.email == "jackeline@example.com"
     assert pessoa.telefone == "123456789"
 
 @pytest.mark.django_db
