@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from .models import Pessoa
+from .models import Post
 # Create your views here.
 
-def listar_pessoas(request):
-    pessoas = Pessoa.objects.all()
-    return render(request,'app_ebac/listar_pessoas.html', {'pessoas':pessoas})
+def listar_posts(request):
+    posts = Post.objects.all()
+    return render(request, 'app_ebac/listar_posts.html', {'posts': posts})
 
