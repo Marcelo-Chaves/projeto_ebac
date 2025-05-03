@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app_ebac.views import listar_pessoas  # <- importante!
+from app_ebac.views import listar_posts  # <- importante!
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', listar_pessoas, name='listar_pessoas'),
+    path('', listar_posts, name='listar_posts'),
 ]

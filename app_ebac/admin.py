@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Pessoa
+from .models import Post
 # Register your models here.
 
-@admin.register(Pessoa)
-class Pessoaadmin(admin.ModelAdmin):
+@admin.register(Post)
+class Postadmin(admin.ModelAdmin):
     list_display = ['nome', 'email', 'telefone']
 
 
